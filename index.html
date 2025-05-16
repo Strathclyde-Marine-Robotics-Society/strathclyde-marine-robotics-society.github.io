@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Strathclyde Marine Robotics Society</title>
-  <style>
-    /* Simple reset */
-    body, h1 {
-      margin: 0;
-      padding: 0;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Strathclyde Marine Robotics Society" />
+  <meta name="author" content="MRS" />
 
-    /* Full viewport height container */
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #0d3b66, #faf0ca);
-    }
+  <link href="styles/styles.css" rel="stylesheet" />
+  <link href="styles/navbar.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    h1 {
-      font-family: 'Arial', sans-serif;
-      font-size: 2.5rem;
-      color: #ffffff;
-      background-color: rgba(13, 59, 102, 0.8);
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
-
-    h1:hover {
-      transform: scale(1.05);
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+   rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Strathclyde Marine Robotics Society</h1>
+  <header id="navbar">
+    <div class="navbar-left">
+      <a href="#home" class="navbar-logo-link">
+        <img src="/images/MRS OG Logo - white.svg" alt="MRS logo" class="navbar-logo"/>
+      </a>
+      <a href="#about">About us</a>
+      <a href="#strathvoyager">Team StrathVoyager</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="navbar-right">
+      <a href="https://www.instagram.com/strathclydemrs/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/strathclyde-marine-robotics-society/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/Strathclyde-Marine-Robotics-Society" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.strathunion.com/groups/find-a-society/society/mrs/" target="_blank">
+        <img src="images/strathunion-logo.svg" alt="StrathUnion Logo" />
+      </a>
+    </div>
+  </header>
+
+  <div id="home" class="container">
+    <img
+      src="/images/MRS OG Logo - white.svg"
+      alt="Marine Robotics Society - Logo with a boat and drone"
+      height="200" />
+  </div>
+
+  <div id="about" class="container">
+    <img src="images/team-photo.JPG" alt="MRS Team Photo at NJORD" height="500">
+    <div class="about-text">
+      <h1>About us</h1>
+      <p>Marine Robotics Society is a student-led group at University of Strathclyde,
+      which provides a space for all enthusiasts of robotics technologies in the marine
+       environment by organising technical projects and research opportunities. </p>
+    </div>
+  </div>
+  <div id="strathvoyager" class="container">
+    <h1>Team StrathVoyager</h1>
+    <p>Team focusing on development of Autonomous Surface Vehicles</p>
+  </div>
+  <div id="contact" class="container">
+    <h1>Contact us!</h1>
+    <p>If you want to contact us, pup us a message on one of the social media accounts or email.
+      Get a membership on the Strath Union Website.
+    </p>
   </div>
 </body>
 </html>
