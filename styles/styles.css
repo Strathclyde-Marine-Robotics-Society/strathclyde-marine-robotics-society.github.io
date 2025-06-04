@@ -115,64 +115,43 @@ img {
   line-height: 1.5;
 }
 
-#sponsor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
-  padding: 40px 0;
-}
-
-.sponsor-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.sponsor-content h1,
-.sponsor-content p {
+.sponsors-section {
   text-align: center;
-  max-width: 800px; /* This will help control the line length for better readability */
-  margin-left: auto;
-  margin-right: auto;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #000035, #ffffff);
 }
 
-.sponsor-logos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin: 40px auto;
+.sponsors-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.sponsors-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+
+}
+
+.sponsor-large img {
+  max-width: 300px;
   width: 100%;
+  height: auto;
+  margin-bottom: 50px;
 }
 
-.sponsor-logo {
+.sponsor-grid {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
   align-items: center;
-  padding: 20px 40px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
 }
 
-.sponsor-logo.large {
-  padding: 25px 40px;
+.sponsor-grid a {
+  display: inline-block;
 }
 
-.sponsor-logo.small {
-  padding: 15px 30px;
-}
-
-.sponsor-logo img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+.sponsor-grid img {
+  height: 80px;
+  width: auto;
 }
